@@ -8,8 +8,9 @@ For the detail, see [Dynamic Routing Between Capsules](https://arxiv.org/pdf/171
 python -u train.py -g 0 --save saved_model --reconstruct
 ```
 
-Test accuracy of a trained model (without reconstruction) reached 99.60%.
-The paper does not provide detailed information about initialization and optimization, so the performance might not reach that in the paper. For alleviating those issues, I replaced relu with leaky relu with a very small slope (0.05). The modified model achieved 99.66% (i.e. error rate is 0.34%), as the paper reported.
+Test accuracy of a trained model (without reconstruction) reached 99.66%.
+The paper does not provide detailed information about initialization and optimization.
+So, for making training easy, I replaced relu with leaky relu with a very small slope (0.05).
 
 
 ## Visualization through Reconstruction
@@ -56,3 +57,19 @@ You can find and enjoy some factors of variation.
 ![vis_tweaked8.png](https://raw.githubusercontent.com/soskek/dynamic_routing_between_capsules/upload-imgs/data/vis_imgs/vis_tweaked8.png)
 
 ![vis_tweaked9.png](https://raw.githubusercontent.com/soskek/dynamic_routing_between_capsules/upload-imgs/data/vis_imgs/vis_tweaked9.png)
+
+
+## Citation
+
+```
+@incollection{NIPS2017_6975,
+    title = {Dynamic Routing Between Capsules},
+    author = {Sabour, Sara and Frosst, Nicholas and Hinton, Geoffrey E},
+    booktitle = {Advances in Neural Information Processing Systems 30},
+    year = {2017},
+}
+```
+
+## License
+
+MIT License. Please see the LICENSE file for details.
