@@ -12,14 +12,23 @@ Test accuracy of a trained model (without reconstruction) reached 99.66%.
 The paper does not provide detailed information about initialization and optimization.
 So, for making training easy, I replaced relu with leaky relu with a very small slope (0.05).
 
+### Requirements
+
+These scripts require the following python libraries.
+
+- Chainer 2.0.0+
+- numpy
+- matplotlib
+
 
 ## Visualization through Reconstruction
+
+For analyzing a trained model, you can produce images reconstructed from digit capsules.
 
 ```
 python visualize.py -g 0 --load saved_model
 ```
 
-produces some images for analyzing digit capsules.
 
 ### Different masks
 
