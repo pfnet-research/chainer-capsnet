@@ -11,7 +11,7 @@ python -u train.py -g 0 --save saved_model --reconstruct
 ```
 
 Test accuracy of a trained model (without reconstruction) reached 99.66%.
-For making training easy, I replaced relu with leaky relu with a very small slope (0.05).
+For making training easy, this code replaced relu with leaky relu with a very small slope (0.05).
 
 ### Requirements
 
@@ -44,7 +44,7 @@ If an irrelevant target is selected, the reconstructed image gets spoiled (see "
 
 ### Interpolation of values in digit capsules
 
-Here, I show reconstructed images after linearly tweaking the value in a dimension in the capsule (as well as section 5.1 and figure 4 in the paper). Green images in the center are reconstructed images without perturbation. Note that a dimension has a different factor if the digit capsule differs, because each matrix for reconstructing each digit is unshared.
+Here, we show reconstructed images after linearly tweaking the value in a dimension in the capsule (as well as section 5.1 and figure 4 in the paper). Green images in the center are reconstructed images without perturbation. Note that a dimension has a different factor if the digit capsule differs, because each matrix for reconstructing each digit is unshared.
 
 You can find and enjoy some factors of variation.
 
