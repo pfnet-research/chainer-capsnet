@@ -11,8 +11,7 @@ python -u train.py -g 0 --save saved_model --reconstruct
 ```
 
 Test accuracy of a trained model (without reconstruction) reached 99.66%.
-The paper does not provide detailed information about initialization and optimization.
-So, for making training easy, I replaced relu with leaky relu with a very small slope (0.05).
+For making training easy, I replaced relu with leaky relu with a very small slope (0.05).
 
 ### Requirements
 
